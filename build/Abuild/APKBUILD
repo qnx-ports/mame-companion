@@ -3,7 +3,7 @@
 pkgname=mame
 pkgver=0.281
 _pkgver=${pkgver/.}
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Multi Arcade Machine Emulator."
 url="https://mamedev.org"
 arch="all"
@@ -183,7 +183,6 @@ lang() {
     amove usr/share/mame/language
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 23db675f15da1007683779a92d8e181d4961cc46dd871a2f061ae48835c6cfb559212aed3e2191c0f4bc52cf6fb4b1ca6cfa1b62f1e8a2e3aea2b4045474f397  mame-0.281-r1.tar.gz
 be6b2bd1c35ba098448437c600fdbb8241f4ce81078ec703770c23da675ffd3149e45ebb75f4f62d7cdc6b9c87a2dd73231684a87787d8a3512c85b270d13519  mame.patch
